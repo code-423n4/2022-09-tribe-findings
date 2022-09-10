@@ -1,0 +1,8 @@
+N-01) No check on [_claim()](https://github.com/code-423n4/2022-09-tribe/blob/main/contracts/shutdown/fuse/RariMerkleRedeemer.sol#L165) and [_redeem()](https://github.com/code-423n4/2022-09-tribe/blob/main/contracts/shutdown/fuse/RariMerkleRedeemer.sol#L201) for correct cToken address input. While it does not seem to cause any security issues here, it would be a good precaution to take.
+**Recommended**: Check `merkleRoot[cToken] != address(0)`
+
+N-02) Function [redeem()](https://github.com/code-423n4/2022-09-tribe/blob/main/contracts/shutdown/redeem/TribeRedeemer.sol#L64) loops through the list of token address and do a safeTransfer. In the event if ***any*** of the tokens fail to transfer to the receiving address for whatever reasons, it will revert for all tokens. 
+**Recommended**: Do a normal transfer instead in case of unexpected transfer failure of a single token that cannot be addressed.
+
+N-03) Likewise, in function [previewRedeem()](https://github.com/code-423n4/2022-09-tribe/blob/main/contracts/shutdown/redeem/TribeRedeemer.sol#L55), there is a check of `require(balance != 0, "ZERO_BALANCE")` for all of the token, and if one token balance is 0, it will cause a revert for all.
+**Recommended**: Remove this check as it is unnecessary. Instead, in [redeem()](https://github.com/code-423n4/2022-09-tribe/blob/main/contracts/shutdown/redeem/TribeRedeemer.sol#L64), we can do the token transfer only if `amountsOut[i] != 0`.
