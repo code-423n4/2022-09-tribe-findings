@@ -15,3 +15,12 @@ contracts/shutdown/redeem/TribeRedeemer.sol:L2     pragma solidity ^0.8.4;
 contracts/peg/SimpleFeiDaiPSM.sol:L2     pragma solidity ^0.8.4;
 
 ```
+
+### [L-02] zero-address checks are missing
+
+
+#### Impact
+Zero-address checks are a best practice for input validation of critical address parameters. Accidental use of zero-addresses may result in exceptions, burn fees/tokens, or force redeployment of contracts.
+
+#### Findings:
+https://github.com/code-423n4/2022-09-tribe/blob/main/contracts/shutdown/redeem/TribeRedeemer.sol#L27-L35
