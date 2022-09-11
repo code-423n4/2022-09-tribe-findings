@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "CertoraInc",
+  "address": "0x09A9af114843218a7446929b1183eBec373B2827",
+  "risk": "3",
+  "title": "Missing check can lead to wrong prices in `RariMerkleRedeemer`",
+  "issueId": 63,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/63"
+}
