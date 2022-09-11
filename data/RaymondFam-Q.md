@@ -31,3 +31,12 @@ require(baseTokenAmountReceived != 0 && baseTokenAmountReceived < IERC20(baseTok
 ```
 ## Chainlink Keeper for MerkleRedeemerDripper.sol
 Instead of inheriting ERC20Dripper and overriding `drip()`, consider implementing Chainlink keeper that would auto-fund RariMerkleRedeemer when the FEI balance dropped below a preset level.
+
+## DAI Balance Check for SimpleFeiDaiPSM.sol
+https://github.com/code-423n4/2022-09-tribe/blob/main/contracts/peg/SimpleFeiDaiPSM.sol#L56
+
+A DAi balance should be checked before line 56 such that:
+
+```
+require(amountOut < balance(), "Insufficient DAI");
+```
