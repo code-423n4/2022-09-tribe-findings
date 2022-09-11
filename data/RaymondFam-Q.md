@@ -40,3 +40,5 @@ A DAi balance should be checked before line 56 such that:
 ```
 require(amountOut < balance(), "Insufficient DAI");
 ```
+## Events in SimpleFeiDaiPSM.sol
+Addresses in events Redeem and Mint should be indexed for ease of filtered access. Where possible, consider maximizing the use of three indices in an event.
