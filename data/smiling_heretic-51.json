@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "smiling_heretic",
+  "address": "0xe180d626a4229c1f1c4cb0278ce071dbcc172adb",
+  "risk": "2",
+  "title": "Missing `hasNotSigned` modifier in `signAndClaim`",
+  "issueId": 51,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/51"
+}
