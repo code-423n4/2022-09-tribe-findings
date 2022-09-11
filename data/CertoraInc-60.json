@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "CertoraInc",
+  "address": "0x09A9af114843218a7446929b1183eBec373B2827",
+  "risk": "3",
+  "title": "Can inflate the total supply of FEI using the `SimpleFeiDaiPSM` contract",
+  "issueId": 60,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/60"
+}
