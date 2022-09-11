@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "cryptphi",
+  "address": "0x876133657f5356e376b7ae27d251444727ce9488",
+  "risk": "3",
+  "title": "User could pay minimal wei value as AmountIn to claim all tokens in TribeRedeemer contract",
+  "issueId": 87,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/87"
+}
