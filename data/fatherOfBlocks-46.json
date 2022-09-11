@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "fatherOfBlocks",
+  "address": "0xd5a2686b02a15b5269848dee6e913f07f459782e",
+  "risk": "3",
+  "title": " risk of constant burning of FEIs in the contract",
+  "issueId": 46,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/46"
+}
