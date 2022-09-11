@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "CertoraInc",
+  "address": "0x09A9af114843218a7446929b1183eBec373B2827",
+  "risk": "2",
+  "title": "The `RariMerkleRedeemer._redeem()` function misses a check",
+  "issueId": 65,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/65"
+}
