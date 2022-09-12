@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "unforgiven",
+  "address": "0x6e6c53f81e310d53387dc2166ee9a632cf768fa1",
+  "risk": "2",
+  "title": "Wrong exchange rates after some time, because It's not possible to change excahngeRates after contract deployments, the rates can be changed after some times in real life but it's not possible to change rates in contract",
+  "issueId": 239,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/239"
+}
