@@ -14,7 +14,7 @@ Since the amount of cTokens must be low enough for the ```previewRedeem``` calcu
 
 ## Proof of Concept
 
-```previewRedeem``` in ```RariMerkleRedeemer.sol```:
+```previewRedeem``` function in ```RariMerkleRedeemer.sol```:
 
 ```solidity
     function previewRedeem(address cToken, uint256 amount) public view override returns (uint256 baseTokenAmount) {
@@ -27,9 +27,36 @@ Since the amount of cTokens must be low enough for the ```previewRedeem``` calcu
 
 Since the only requirement for the exchange rate is to be > 1e10, it could have a value of 2e10. The user would need to input an amount of atleast 5e7 so that ```previewRedeem``` does not return 0. If a user forgets to include the decimals and enters an amount of 10 for example then the returned amount will be 0.
 
+```_redeem``` function in ```RariMerkleRedeemer.sol```:
+```solidity
+    function _redeem(address cToken, uint256 cTokenAmount) internal virtual {
+        // check: amount must be greater than 0
+        require(cTokenAmount != 0, "Invalid amount");
+
+        // check: verify that the user's claimedAmount+amount of this cToken doesn't exceed claimableAmount for this cToken
+        require(
+            redemptions[msg.sender][cToken] + cTokenAmount <= claims[msg.sender][cToken],
+            "Amount exceeds available remaining claim."
+        );
+
+        // effect: increment the user's claimedAmount
+        redemptions[msg.sender][cToken] += cTokenAmount;
+
+        uint256 baseTokenAmountReceived = previewRedeem(cToken, cTokenAmount);
+
+        // interaction: safeTransferFrom the user "amount" of "cToken" to this contract
+        IERC20(cToken).safeTransferFrom(msg.sender, address(this), cTokenAmount);
+        IERC20(baseToken).safeTransfer(msg.sender, baseTokenAmountReceived);
+
+        emit Redeemed(msg.sender, cToken, cTokenAmount, baseTokenAmountReceived);
+    }
+```
+
+In the ```_redeem``` function, the amount of cToken sent by the user is non-zero while the amount of baseToken received is zero. The user loses the cToken amount.
+
 ## Recommended Mitigation Steps
 
-Consider adding a sanity check in the ```_redeem``` function to ensure the amount redeemed is not 0.
+Consider adding a sanity check in the ```_redeem``` and ```_multiRedeem``` functions to ensure the amount redeemed is not 0.
 
 
 
@@ -47,7 +74,7 @@ If the ```redeemBase``` variable in ```TribeRedeemer.sol``` is too large [(```re
 
 ## Impact
 
-The redeemer could lose their ```redeemedToken``` amount sent to the contract. This could be true if the ```redeemBase``` is set too high in comparison to the balance of a ```tokensReceived``` token multiplied by the amount of ```redeemedToken``` sent by the redeemer. The function could also return 0 if the balances of the ```tokensReceived``` tokens in the contract are too low.
+The redeemer could lose their ```redeemedToken``` amount sent to the contract. This could be true if the ```redeemBase``` is set too high in comparison to the balance of a ```tokensReceived``` token multiplied by the amount of ```redeemedToken``` sent by the redeemer.
 
 ## Proof of Concept
 
@@ -78,4 +105,4 @@ If ```amountIn*balance < base``` the redeemedAmount for that token will be 0. If
 
 ## Recommended Mitigation Steps
 
-Check that at least 1 ```amountsOut``` is more than 0.
+Check that at least 1 ```amountsOut``` is more than 0 when ```redeem``` is called.
