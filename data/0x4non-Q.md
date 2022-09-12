@@ -8,6 +8,10 @@ Take a look into [SWC-103](https://swcregistry.io/docs/SWC-103)
 
 ---
 
+Current sign message on [MultiMerkleRedeemer.sol#L53](https://github.com/code-423n4/2022-09-tribe/blob/769b0586b4975270b669d7d1581aa5672d6999d5/contracts/shutdown/fuse/MultiMerkleRedeemer.sol#L53) seems to be a sample message, it say `Sample message, please update.`
+
+---
+
 Use named imports, as you do on [MerkleRedeemerDripper.sol#L4-L5](https://github.com/code-423n4/2022-09-tribe/blob/769b0586b4975270b669d7d1581aa5672d6999d5/contracts/shutdown/fuse/MerkleRedeemerDripper.sol#L4-L5)
 
 In this cases you are not using named imports;
