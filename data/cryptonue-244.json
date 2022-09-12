@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "cryptonue",
+  "address": "0xabcde0360abcba45098125e55437b005ae5df46f",
+  "risk": "3",
+  "title": "High Potential Redeem function can not be executed because of revert",
+  "issueId": 244,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/244"
+}
