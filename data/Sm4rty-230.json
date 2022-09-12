@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "Sm4rty",
+  "address": "0xc32c8c6e1c6f4fe66e10579f552a6b990b36e8b7",
+  "risk": "2",
+  "title": "External Calls inside loops of _multiRedeem & redeem function may cause Denial of Service",
+  "issueId": 230,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/230"
+}
