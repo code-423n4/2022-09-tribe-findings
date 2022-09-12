@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "unforgiven",
+  "address": "0x6e6c53f81e310d53387dc2166ee9a632cf768fa1",
+  "risk": "3",
+  "title": "in function redeem() of TribeRedeemer users would receive less funds because of rounding error in division in previewRedeem()",
+  "issueId": 276,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/276"
+}
