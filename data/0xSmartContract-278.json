@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "0xSmartContract",
+  "address": "0x1c9eadb67e158ac831c3922ea17e370a99bcc8f4",
+  "risk": "3",
+  "title": "Missing access Control to burnFeiHeld function",
+  "issueId": 278,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/278"
+}
