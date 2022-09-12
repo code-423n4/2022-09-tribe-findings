@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "rvierdiiev",
+  "address": "0x1a5adee23ffbdef58d41c1addac2521ca600b950",
+  "risk": "2",
+  "title": "TribeRedeemer will start redeeming incorrectly if someone transfer redeem tokens directly to it",
+  "issueId": 114,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/114"
+}
