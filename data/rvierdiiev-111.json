@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "rvierdiiev",
+  "address": "0x1a5adee23ffbdef58d41c1addac2521ca600b950",
+  "risk": "2",
+  "title": "TribeRedeemer may work wrong if _redeemBase constructor param is not equal to IERC20(_redeemedToken).totalSupply().",
+  "issueId": 111,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/111"
+}
