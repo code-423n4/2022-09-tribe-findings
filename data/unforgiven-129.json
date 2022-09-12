@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "unforgiven",
+  "address": "0x6e6c53f81e310d53387dc2166ee9a632cf768fa1",
+  "risk": "2",
+  "title": "_redeem() and _multiRedeem() don't have same behavior for cToken equal to 0x0 ",
+  "issueId": 129,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/129"
+}
