@@ -10,7 +10,7 @@ In the ```previewRedeem``` function in ```RariMerkleRedeemer.sol``` the amount o
 
 ## Impact
 
-Since the amount of cTokens must be low enough for the ```previewRedeem``` calculations to return 0, the amount of funds lost would realistically not be too much if the user notices their error.
+Since the amount of cTokens must be low enough for the ```previewRedeem``` calculations to return 0, the amount of funds lost would realistically not be too much.
 
 ## Proof of Concept
 
@@ -43,11 +43,11 @@ Consider adding a sanity check in the ```_redeem``` function to ensure the amoun
 
 ## Description
 
-If the ```redeemBase``` variable in ```TribeRedeemer.sol``` is too large [(```redeemBase > amountIn*balance```)](https://github.com/code-423n4/2022-09-tribe/blob/main/contracts/shutdown/redeem/TribeRedeemer.sol#L58) then the ```amountsOut``` to be sent to the redeemer could be 0 for all tokens.
+If the ```redeemBase``` variable in ```TribeRedeemer.sol``` is too large [(```redeemBase > amountIn*balance```)](https://github.com/code-423n4/2022-09-tribe/blob/main/contracts/shutdown/redeem/TribeRedeemer.sol#L58) then the ```amountsOut``` to be sent to the redeemer could be 0 for some or all tokens.
 
 ## Impact
 
-The redeemer could lose their ```redeemedToken``` amount sent to the contract. This could be true if the ```redeemBase``` is set too high in comparison to the balance of a ```tokensReceived``` token multiplied by the amount of ```redeemedToken``` sent by the redeemer. Or the balances of the ```tokensReceived``` could be too low. Since ```amountIn``` must be less than the ```redeemBase``` 
+The redeemer could lose their ```redeemedToken``` amount sent to the contract. This could be true if the ```redeemBase``` is set too high in comparison to the balance of a ```tokensReceived``` token multiplied by the amount of ```redeemedToken``` sent by the redeemer. The function could also return 0 if the balances of the ```tokensReceived``` tokens in the contract are too low.
 
 ## Proof of Concept
 
@@ -74,6 +74,8 @@ The redeemer could lose their ```redeemedToken``` amount sent to the contract. T
     }
 ```
 
+If ```amountIn*balance < base``` the redeemedAmount for that token will be 0. If this is the case for all tokens, the user will receive nothing for the Tribe amount sent to the contract.
+
 ## Recommended Mitigation Steps
 
-Check that at least 1 amountsOut is more than 0.
+Check that at least 1 ```amountsOut``` is more than 0.
