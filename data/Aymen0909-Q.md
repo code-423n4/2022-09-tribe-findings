@@ -6,7 +6,7 @@
 | :-------------: |:-------------|:-------------:|
 | 1      | Immutable addresses lack zero address `address(0)` checks | 1|
 | 2      | Missing `hasNotSigned` modifier check in the `signAndClaim` function  |  1 |
-| 3      | Setters should check the input value and revert if it's the zero address or zero  |  1 |
+| 3      | Adding a `return` statement when the function defines a named return variable is redundant  |  1 |
 | 4      | Related data should be grouped in a `struct` |  1 |
 
 
