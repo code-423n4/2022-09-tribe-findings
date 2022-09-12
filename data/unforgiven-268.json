@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "unforgiven",
+  "address": "0x6e6c53f81e310d53387dc2166ee9a632cf768fa1",
+  "risk": "2",
+  "title": "constructor of the TribeRedeemer don't check that tokensReceived are unique and redeemedToken is different from them. if they have same values then the logics won't work and users could loss funds.",
+  "issueId": 268,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/268"
+}
