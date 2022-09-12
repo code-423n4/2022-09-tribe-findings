@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "0xNazgul",
+  "address": "0x714af4c78135ec866a3cd34755bdb59cdb9b7246",
+  "risk": "2",
+  "title": "[NAZ-M2] `mint()` Should Have an `address(this)` Validation",
+  "issueId": 163,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/163"
+}
