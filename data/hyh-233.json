@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "hyh",
+  "address": "0x8efE50a4b8c8B64FDC93a5b1712Fd735d8223cD5",
+  "risk": "2",
+  "title": "RariMerkleRedeemer's signAndClaim lacks hasNotSigned modifier",
+  "issueId": 233,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/233"
+}
