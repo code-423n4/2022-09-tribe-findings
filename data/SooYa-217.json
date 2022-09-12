@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "SooYa",
+  "address": "0xd9c055ebb562056fc195a254da53ce92ef60c359",
+  "risk": "2",
+  "title": "`redeem` WIll Fail If There Is One `tokenReceived` Has Zero Balance",
+  "issueId": 217,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/217"
+}
