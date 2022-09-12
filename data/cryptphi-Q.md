@@ -23,3 +23,7 @@ The following functions are missing zero address checks which may cause either t
 SimpleFeiDaiPSM.redeem() - may cause transfer of ERC20 tokens to address(0)
 TribeRedeemer.redeem() - may cause transfer of ERC20 tokens to address(0)
 TribeRedeemer.constructor() - may cause redeemToken to be set to address zero and users are unable to call TribeRedeemer.redeem() successfully due to wrong address of redeemToken in line 65.
+
+
+4. Check-Effect-Interact pattern not followed
+In TribeRedeemer.redeem() function, the CEI pattern is not adhered to as the state variable `redeemBase` is updated after an external call `IERC20(redeemedToken).safeTransferFrom(msg.sender, address(this), amountIn);` . 
