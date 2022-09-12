@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "ak1",
+  "address": "0xf7a08c2c341bde5e17103d4780d1b465011a2a31",
+  "risk": "2",
+  "title": "In TribeRedeemer.sol, _tokensReceived array can have duplicate token as it is array. This can happen by user input error while deploying the contract.",
+  "issueId": 215,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/215"
+}
