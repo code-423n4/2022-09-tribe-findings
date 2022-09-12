@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "unforgiven",
+  "address": "0x6e6c53f81e310d53387dc2166ee9a632cf768fa1",
+  "risk": "2",
+  "title": "fund loss and 27 token condition bypass in RariMerkleRedeemer because code doesn't check that cTokens are unique and they are not equal to  baseToken",
+  "issueId": 150,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/150"
+}
