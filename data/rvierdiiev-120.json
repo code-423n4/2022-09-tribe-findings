@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "rvierdiiev",
+  "address": "0x1a5adee23ffbdef58d41c1addac2521ca600b950",
+  "risk": "2",
+  "title": "RariMerkleRedeemer::redeem will take user cToken and return nothing for small amounts in some cases",
+  "issueId": 120,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/120"
+}
