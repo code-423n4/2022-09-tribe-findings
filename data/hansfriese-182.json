@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "hansfriese",
+  "address": "0xf2dcb1d3b7091dcf2ce87ad115377c108ebe6dd4",
+  "risk": "2",
+  "title": "`RariMerkleRedeemer._redeem()` and `RariMerkleRedeemer._multiRedeem()` wouldn't work properly when `baseTokenAmountReceived = 0`.",
+  "issueId": 182,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/182"
+}
