@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "0x52",
+  "address": "0x522dffc539c264a8f7e0b91102e899b33f4dabc3",
+  "risk": "2",
+  "title": "Forcing users to receive all tokens could cause issues with future redemption",
+  "issueId": 224,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/224"
+}
