@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "rbserver",
+  "address": "0x4bd9605a3e546f3400df2c2be7b1c775aeea56bd",
+  "risk": "2",
+  "title": "It is possible that RariMerkleRedeemer.previewRedeem function returns 0 for positive cToken redemption amount",
+  "issueId": 201,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/201"
+}
