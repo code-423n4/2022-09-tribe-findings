@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "unforgiven",
+  "address": "0x6e6c53f81e310d53387dc2166ee9a632cf768fa1",
+  "risk": "2",
+  "title": "There is no time lock mechanism in RariMerkleRedeemer and constructor of RariMerkleRedeemer contract don't check for maximum value for cTokenExchangeRates, if high value have been set by mistake then attacker can withdraw most of baseToken balance of contract immediately",
+  "issueId": 234,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/234"
+}
