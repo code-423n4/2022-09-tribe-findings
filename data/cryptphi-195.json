@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "cryptphi",
+  "address": "0x876133657f5356e376b7ae27d251444727ce9488",
+  "risk": "2",
+  "title": "Possible divide by zero revert due to missing zero value check in constructor",
+  "issueId": 195,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/195"
+}
