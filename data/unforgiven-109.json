@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "unforgiven",
+  "address": "0x6e6c53f81e310d53387dc2166ee9a632cf768fa1",
+  "risk": "3",
+  "title": "user fund loss in redeem() of RariMerkleRedeemer, because of division rounding error in previewRedeem() which is used in _redeem() and _multiRedeem()",
+  "issueId": 109,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/109"
+}
