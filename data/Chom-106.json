@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "Chom",
+  "address": "0xc4c459668fb29833d7dee997d7d347e2634c9cef",
+  "risk": "2",
+  "title": "redeemBase may not be accurate. If it is set below the TRIBE circulating supply, some TRIBE holders may not be able to redeem it. It also can't handle dynamic TRIBE supply.",
+  "issueId": 106,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/106"
+}
