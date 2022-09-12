@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "cryptonue",
+  "address": "0xabcde0360abcba45098125e55437b005ae5df46f",
+  "risk": "2",
+  "title": "Can easily bypass the `require` by modifying parameter",
+  "issueId": 212,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/212"
+}
