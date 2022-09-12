@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "rvierdiiev",
+  "address": "0x1a5adee23ffbdef58d41c1addac2521ca600b950",
+  "risk": "2",
+  "title": "User will receive nothing for redeeming his tokens if TribeRedeemer constructor was by mistake provided with empty _tokensReceived list",
+  "issueId": 115,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/115"
+}
