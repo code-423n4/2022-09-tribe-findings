@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "dronassah",
+  "address": "0x6f8bdec4252d6b73e393301c1e6c8e8bf0a50e9f",
+  "risk": "2",
+  "title": "_claim function vulnerable to cross-chain-replay attacks",
+  "issueId": 243,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/243"
+}
