@@ -1,0 +1,3 @@
+1. There is an undocumented assumption that msg.sender has given allowance on redeemedToken tokens to TribeRedeemer contract.
+2. There is no way to take Ether out of the TribeRedeemer  contract in case if it receives any accidently via selfdestruct
+3. If redeemedToken  address is added to the tokensReceived array by mistake, there will be no way to fully redeem all tokens, as every time part of redeemedToken  will be sent back to the user.
