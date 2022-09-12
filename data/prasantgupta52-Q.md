@@ -131,7 +131,36 @@ contracts/shutdown/redeem/TribeRedeemer.sol:38:    function tokensReceivedOnRede
 use named return for every function
 
 ----
-# 7. Same operation done by two different function
+# 7. Variable name that consist of capital letters should be reserved for constants and immutable variables
+### Description
+If the variable needs to be different based on which class it comes from, a view/pure function should be used instead (e.g. like this).
+
+ ### Instances
+ //Links to Githubfile
+[TribeRedeemer.sol:L17](https://github.com/code-423n4/2022-09-tribe/blob/main/contracts/shutdown/redeem/TribeRedeemer.sol#L17)
+[SimpleFeiDaiPSM.sol:L75](https://github.com/code-423n4/2022-09-tribe/blob/main/contracts/peg/SimpleFeiDaiPSM.sol#L75)
+[SimpleFeiDaiPSM.sol:L92](https://github.com/code-423n4/2022-09-tribe/blob/main/contracts/peg/SimpleFeiDaiPSM.sol#L92)
+[SimpleFeiDaiPSM.sol:L93](https://github.com/code-423n4/2022-09-tribe/blob/main/contracts/peg/SimpleFeiDaiPSM.sol#L93)
+[SimpleFeiDaiPSM.sol:L94](https://github.com/code-423n4/2022-09-tribe/blob/main/contracts/peg/SimpleFeiDaiPSM.sol#L94)
+[SimpleFeiDaiPSM.sol:L95](https://github.com/code-423n4/2022-09-tribe/blob/main/contracts/peg/SimpleFeiDaiPSM.sol#L95)
+[SimpleFeiDaiPSM.sol:L96](https://github.com/code-423n4/2022-09-tribe/blob/main/contracts/peg/SimpleFeiDaiPSM.sol#L96)
+[SimpleFeiDaiPSM.sol:L97](https://github.com/code-423n4/2022-09-tribe/blob/main/contracts/peg/SimpleFeiDaiPSM.sol#L97)
+[SimpleFeiDaiPSM.sol:L98](https://github.com/code-423n4/2022-09-tribe/blob/main/contracts/peg/SimpleFeiDaiPSM.sol#L98)
+
+ ### Actual codes used:
+```
+contracts/shutdown/redeem/TribeRedeemer.sol:17:    address public immutable redeemedToken;
+contracts/peg/SimpleFeiDaiPSM.sol:75:    address public constant balanceReportedIn = address(DAI);
+contracts/peg/SimpleFeiDaiPSM.sol:92:    uint256 public constant mintFeeBasisPoints = 0;
+contracts/peg/SimpleFeiDaiPSM.sol:93:    uint256 public constant redeemFeeBasisPoints = 0;
+contracts/peg/SimpleFeiDaiPSM.sol:94:    address public constant underlyingToken = address(DAI);
+contracts/peg/SimpleFeiDaiPSM.sol:95:    uint256 public constant getMaxMintAmountOut = type(uint256).max;
+contracts/peg/SimpleFeiDaiPSM.sol:96:    bool public constant paused = false;
+contracts/peg/SimpleFeiDaiPSM.sol:97:    bool public constant redeemPaused = false;
+contracts/peg/SimpleFeiDaiPSM.sol:98:    bool public constant mintPaused = false;
+```
+----
+# 8. Same operation done by two different function
  Non-Critical
  If two fuction are doing same operation there is no point of declaring two functions
  ### Instances
