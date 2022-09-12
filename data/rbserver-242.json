@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "rbserver",
+  "address": "0x4bd9605a3e546f3400df2c2be7b1c775aeea56bd",
+  "risk": "2",
+  "title": "One user can have incentive to front-run another user's TribeRedeemer.redeem transaction",
+  "issueId": 242,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/242"
+}
