@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "Chom",
+  "address": "0xc4c459668fb29833d7dee997d7d347e2634c9cef",
+  "risk": "3",
+  "title": "User that uses auto compounding solution to auto compound cTokens and smart contracts that hold cTokens can't redeem their cTokens to FEI",
+  "issueId": 192,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/192"
+}
