@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "CertoraInc",
+  "address": "0x09A9af114843218a7446929b1183eBec373B2827",
+  "risk": "3",
+  "title": "The `TribeRedeemer` contract can be initialized with problematic values leading to wrong amount of tokens",
+  "issueId": 118,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/118"
+}
