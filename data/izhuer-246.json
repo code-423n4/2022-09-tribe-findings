@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "izhuer",
+  "address": "0xe03a2766325d914898cda00d4ef927a305786aa7",
+  "risk": "2",
+  "title": "Funds may get locked due to precision loss in `RariMerkleRedeemer `",
+  "issueId": 246,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/246"
+}
