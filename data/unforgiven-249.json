@@ -1,0 +1,9 @@
+{
+  "contest": 161,
+  "handle": "unforgiven",
+  "address": "0x6e6c53f81e310d53387dc2166ee9a632cf768fa1",
+  "risk": "3",
+  "title": "burnFeiHeld() in SimpleFeiDaiPSM burns FEI balance of contract, which includes FEI received because of redeems and FEI transferred or minted for the contract address. contract should only burn FEI received in redeems. this functionality a backdoor to transfer and burn FEI tokens by this contract.",
+  "issueId": 249,
+  "issueUrl": "https://github.com/code-423n4/2022-09-tribe-findings/issues/249"
+}
