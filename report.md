@@ -1,3 +1,11 @@
+---
+sponsor: "Tribe"
+slug: "2022-09-tribe"
+date: "2022-11-08"
+title: "FEI and TRIBE Redemption contest"
+findings: "https://github.com/code-423n4/2022-09-tribe-findings/issues"
+contest: 161
+---
 
 # Overview
 
